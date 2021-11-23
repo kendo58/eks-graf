@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  #- AlertManagerConfigmap.yaml
+  #- AlertManagerDeploy.yaml
+  #- AlertManagerService.yaml
+  #- AlertTemplateConfigmap.yaml
+  - clusterRole.yaml
+  - config-map.yaml
+  - grafana.yaml
+  - grafana-pvc.yaml
+  - grafana-service.yaml
+  - kstate-deployment.yaml
+  - kstate-service-account.yaml
+  - kstate-service.yaml
+  - prom-pvc.yaml
+  - prometheus-deployment.yaml
+  - prometheus-service.yaml
+
